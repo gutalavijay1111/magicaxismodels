@@ -2,7 +2,7 @@
 (() => {
     var t = {
             6955: () => {
-                "serviceWorker" in navigator && navigator.serviceWorker.register("/service-worker.js")
+                "serviceWorker" in navigator && navigator.serviceWorker.register("/magicaxismodels/service-worker.js")
             },
             1663: t => {
                 "use strict";
@@ -6046,7 +6046,7 @@
                     change(t) {
                         if (!(t.indexOf("collections") > -1)) {
                             this.isOpen = !0;
-                            const e = t.replace("/detail/", ""),
+                            const e = t.replace("/magicaxismodels/detail/", ""),
                                 i = hn()(this.medias, (t => t.id === e));
                             return un(this.medias, (t => {
                                 i !== t && t.hide()
@@ -6134,7 +6134,7 @@
                 this.createAbout(), this.createCollections(), this.createHome(), this.onChange(this.template, !0)
             }
             onChange(t, e) {
-                "/about" === t ? this.about.show(e) : this.about.hide(), "/collections" === t || t.indexOf("detail") > -1 ? this.collections.isVisible ? this.collections.change(t) : this.collections.show(e, t) : this.collections.hide(), "/" === t ? this.home.show(e) : this.home.hide(), this.template = t
+                "/magicaxismodels/about" === t ? this.about.show(e) : this.about.hide(), "/magicaxismodels/collections" === t || t.indexOf("detail") > -1 ? this.collections.isVisible ? this.collections.change(t) : this.collections.show(e, t) : this.collections.hide(), "/magicaxismodels/" === t ? this.home.show(e) : this.home.hide(), this.template = t
             }
             onResize() {
                 this.renderer.setSize(window.innerWidth, window.innerHeight), this.camera.perspective({
@@ -6568,7 +6568,7 @@
                 }))), this.onChange(t)
             }
             onChange(t) {
-                "/about" === t ? (br.set(this.element, {
+                "/magicaxismodels/about" === t ? (br.set(this.element, {
                     color: "#37384C"
                 }), br.set(this.elements.items[0], {
                     autoAlpha: 1
@@ -7634,9 +7634,9 @@
             }
             createPages() {
                 this.about = new la, this.collections = new ua, this.home = new pa, this.pages = {
-                    "/": this.home,
-                    "/about": this.about,
-                    "/collections": this.collections
+                    "/magicaxismodels/": this.home,
+                    "/magicaxismodels/about": this.about,
+                    "/magicaxismodels/collections": this.collections
                 }, this.detailsElements = document.querySelectorAll(".detail"), this.details = un(this.detailsElements, (t => {
                     const e = new ca({
                         element: t
