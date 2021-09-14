@@ -7641,7 +7641,7 @@
                     const e = new ca({
                         element: t
                     });
-                    this.pages[`/detail/${t.getAttribute("id")}`] = e
+                    this.pages[`/magicaxismodels/detail/${t.getAttribute("id")}`] = e
                 })), this.page = this.pages[this.template]
             }
             onPreloaded() {
