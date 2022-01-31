@@ -464,7 +464,7 @@ body {
 }
 
 html {
-    background: #c97164;
+    background: #171219;
     color: #f9f1e7;
     font-size: calc(100vw / 1920 * 10);
     line-height: 1;
@@ -1508,12 +1508,12 @@ img.loaded {
 }
 
 .home__wrapper:before {
-    background: linear-gradient(to bottom, #C97164 15%, rgba(201, 113, 100, 0) 100%);
+    background: linear-gradient(to bottom, #171219 15%, rgba(199, 195, 161, 0) 100%);
     top: 0
 }
 
 .home__wrapper:after {
-    background: linear-gradient(to top, #C97164 15%, rgba(201, 113, 100, 0) 100%);
+    background: linear-gradient(to top, #171219 15%, rgba(207, 204, 178, 0) 100%);
     bottom: 0
 }
 
